@@ -1,2 +1,15 @@
 
 <%= render(@programmer) || "No Programmer" %>
+
+  <div class="col-md-9 programmer-info">
+
+    <%= render 'programmers/attribute', locals: {title: "Home Country", att: @programmer.home_country} %>
+    <%= render 'programmers/attribute', locals: {title: "Quote", att: @programmer.quote} %>
+    <%= render 'programmers/attribute', locals: {title: "Claim To Fame:", att: @programmer.claim_to_fame} %>
+    
+
+    <p>
+    <%= link_to "Learn more about #{@programmer.name}", @programmer.wikipedia_page, target: '_blank' %>
+    </p>
+
+  </div>
