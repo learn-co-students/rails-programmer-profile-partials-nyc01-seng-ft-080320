@@ -3,9 +3,9 @@
 
   <div class="col-md-9 programmer-info">
 
-    <%= render 'programmers/attribute', locals: {title: "Home Country", att: @programmer.home_country} %>
-    <%= render 'programmers/attribute', locals: {title: "Quote", att: @programmer.quote} %>
-    <%= render 'programmers/attribute', locals: {title: "Claim To Fame:", att: @programmer.claim_to_fame} %>
+    <%= render partial: 'attribute', locals: {title: "Home Country", att: @programmer.home_country} %>
+    <%= render partial: 'attribute', locals: {title: "Quote", att: @programmer.quote} %>
+    <%= render partial: 'attribute', locals: {title: "Claim To Fame:", att: @programmer.claim_to_fame} %>
     
 
     <p>
